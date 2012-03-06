@@ -1,0 +1,20 @@
+name:              markdown-preview
+version:           0.0.0
+license:           GPL-3
+license-file:      LICENSE
+author:            Kyle
+maintainer:        Kyle
+synopsis:          Simple markdown preview.
+description:       wxWidgets application used to preview markdown while it's being written.
+stability:         Experimental
+cabal-version:     >= 1.6
+build-type:        Simple
+
+executable         markdown-preview
+    main-is:       markdown.hs
+
+    build-depends: base                          >= 4          && < 5
+                 , wx                            >= 0.12       && < 0.14
+                 , wxcore                        >= 0.12       && < 0.14
+                 , pandoc                        >= 1.9        && < 2.0
+
